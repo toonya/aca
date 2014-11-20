@@ -1,3 +1,12 @@
+/*  
+Theme Name: aca
+Theme URI: 
+Description: 
+Version: 
+Author: 
+Author URI: 
+Tags: 
+*/
 html,
 body,
 div,
@@ -470,7 +479,7 @@ nav.navbar .search form button {
   height: 32px;
   border: none;
   box-shadow: none;
-  background: url(../img/search.png) center center no-repeat;
+  background: url(img/search.png) center center no-repeat;
 }
 nav.navbar .search form button::before {
   content: " ";
@@ -516,11 +525,11 @@ section.slide .carousel-control:hover {
 }
 section.slide .carousel-control.left {
   left: 60px;
-  background-image: url(../img/left-arrow.png);
+  background-image: url(img/left-arrow.png);
 }
 section.slide .carousel-control.right {
   right: 60px;
-  background-image: url(../img/right-arrow.png);
+  background-image: url(img/right-arrow.png);
 }
 section.slide .item {
   width: 100%;
@@ -624,13 +633,13 @@ section.honour .carousel-control {
   left: 50%;
 }
 section.honour .carousel-control.left {
-  background-image: url(../img/dark-left-arrow.png);
+  background-image: url(img/dark-left-arrow.png);
   -webkit-transform: translateX(-38px);
       -ms-transform: translateX(-38px);
           transform: translateX(-38px);
 }
 section.honour .carousel-control.right {
-  background-image: url(../img/dark-right-arrow.png);
+  background-image: url(img/dark-right-arrow.png);
   -webkit-transform: translateX(6px);
       -ms-transform: translateX(6px);
           transform: translateX(6px);
@@ -653,13 +662,13 @@ section.team .carousel-control {
   left: 50%;
 }
 section.team .carousel-control.left {
-  background-image: url(../img/dark-left-arrow.png);
+  background-image: url(img/dark-left-arrow.png);
   -webkit-transform: translateX(-38px);
       -ms-transform: translateX(-38px);
           transform: translateX(-38px);
 }
 section.team .carousel-control.right {
-  background-image: url(../img/dark-right-arrow.png);
+  background-image: url(img/dark-right-arrow.png);
   -webkit-transform: translateX(6px);
       -ms-transform: translateX(6px);
           transform: translateX(6px);
@@ -686,13 +695,13 @@ section.co-op .carousel-control {
   left: 50%;
 }
 section.co-op .carousel-control.left {
-  background-image: url(../img/dark-left-arrow.png);
+  background-image: url(img/dark-left-arrow.png);
   -webkit-transform: translateX(-38px);
       -ms-transform: translateX(-38px);
           transform: translateX(-38px);
 }
 section.co-op .carousel-control.right {
-  background-image: url(../img/dark-right-arrow.png);
+  background-image: url(img/dark-right-arrow.png);
   -webkit-transform: translateX(6px);
       -ms-transform: translateX(6px);
           transform: translateX(6px);
@@ -715,13 +724,13 @@ section.feedback .carousel-control {
   left: 50%;
 }
 section.feedback .carousel-control.left {
-  background-image: url(../img/dark-left-arrow.png);
+  background-image: url(img/dark-left-arrow.png);
   -webkit-transform: translateX(-38px);
       -ms-transform: translateX(-38px);
           transform: translateX(-38px);
 }
 section.feedback .carousel-control.right {
-  background-image: url(../img/dark-right-arrow.png);
+  background-image: url(img/dark-right-arrow.png);
   -webkit-transform: translateX(6px);
       -ms-transform: translateX(6px);
           transform: translateX(6px);
@@ -734,7 +743,7 @@ section.feedback .feedback-wrapper {
   margin: 0 auto;
   padding: 60px 90px 120px;
   border: 1px solid #dcdcdc;
-  background: #eeeeee url(../img/pencil.png) right bottom no-repeat;
+  background: #eeeeee url(img/pencil.png) right bottom no-repeat;
 }
 section.feedback .feedback-inner {
   position: relative;
@@ -757,12 +766,12 @@ section.feedback .feedback-inner p .end {
   position: relative;
 }
 section.feedback .feedback-inner p .start {
-  background-image: url(../img/quotation-start.png);
+  background-image: url(img/quotation-start.png);
   margin-right: 12px;
   margin-top: -12px;
 }
 section.feedback .feedback-inner p .end {
-  background-image: url(../img/quotation-end.png);
+  background-image: url(img/quotation-end.png);
   margin-bottom: -18px;
 }
 section.feedback .feedback-inner .customer {
@@ -834,7 +843,7 @@ section.together .hot-item-list li a small {
 }
 section.together .hot-item-list li a.free::after {
   content: " ";
-  background: url(../img/free.png) no-repeat;
+  background: url(img/free.png) no-repeat;
   width: 34px;
   height: 83px;
   position: absolute;
@@ -842,10 +851,10 @@ section.together .hot-item-list li a.free::after {
   right: 28px;
 }
 section.together .hot-item-list li a.water-mark-doc {
-  background-image: url(../img/doc-water-mark.png);
+  background-image: url(img/doc-water-mark.png);
 }
 section.together .hot-item-list li a.water-mark-clipboard {
-  background-image: url(../img/clipboard-water-mark.png);
+  background-image: url(img/clipboard-water-mark.png);
 }
 section.together .point-list li {
   display: block;
@@ -867,23 +876,23 @@ section.together .point-list .item-title span {
   font-size: 18px;
 }
 section.together .point-list .icon-tea {
-  background-image: url(../img/tea.png);
+  background-image: url(img/tea.png);
   background-position: 15px top;
 }
 section.together .point-list .icon-tie {
-  background-image: url(../img/tie.png);
+  background-image: url(img/tie.png);
   background-position: 18px 8px;
 }
 section.together .point-list .icon-award {
-  background-image: url(../img/award.png);
+  background-image: url(img/award.png);
   background-position: 12px 6px;
 }
 section.together .point-list .icon-like {
-  background-image: url(../img/like.png);
+  background-image: url(img/like.png);
   background-position: 10px 8px;
 }
 section.together .point-list .icon-sun {
-  background-image: url(../img/sun.png);
+  background-image: url(img/sun.png);
   background-position: 12px 6px;
 }
 section.together .news-list li {
@@ -922,7 +931,7 @@ section.together .more {
   color: #6b6b6b;
 }
 footer {
-  background: url(../img/footer-bakcground.jpg) no-repeat, url(../img/footer-pattern.jpg) repeat;
+  background: url(img/footer-bakcground.jpg) no-repeat, url(img/footer-pattern.jpg) repeat;
   margin-top: 84px;
   padding-top: 60px;
   background-size: contain;

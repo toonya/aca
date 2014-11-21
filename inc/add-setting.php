@@ -3,7 +3,7 @@
 add_action( 'admin_menu', 'add_setting' );
 
 function add_setting() {
-    add_menu_page( '设置', '设置', 'manage_options', 'add-setting', 'add_setting_page', '', 110 );
+    add_menu_page( '其它设置', '其它设置', 'manage_options', 'add-setting', 'add_setting_page', '', 110 );
 }
 function add_setting_page() {
     //setting option
@@ -46,65 +46,66 @@ function add_setting_func() {
                        'add_setting_stats',
                        'add-setting',
                        'add_setting');
-    add_settings_field('mail-reciver',
-                       '接收邮件地址(多个Email使用空格区分)',
-                       'mail_reciver_stats',
-                       'add-setting',
-                       'add_setting');
-    add_settings_field('phone-number',
-                       '联系电话（填写后，前台会出现相应模块）',
-                       'phone_number',
-                       'add-setting',
-                       'add_setting');
+    // add_settings_field('mail-reciver',
+    //                    '接收邮件地址(多个Email使用空格区分)',
+    //                    'mail_reciver_stats',
+    //                    'add-setting',
+    //                    'add_setting');
+    // add_settings_field('phone-number',
+    //                    '联系电话（填写后，前台会出现相应模块）',
+    //                    'phone_number',
+    //                    'add-setting',
+    //                    'add_setting');
 
-    add_settings_field('qr-code',
-                       '微信二维码图片地址（可上传到媒体中心后，复制链接）',
-                       'qr_code',
-                       'add-setting',
-                       'add_setting');
-    add_settings_field('qq-contact',
-                       'qq联系代码',
-                       'qq_contact',
-                       'add-setting',
-                       'add_setting');
+    // add_settings_field('qr-code',
+    //                    '微信二维码图片地址（可上传到媒体中心后，复制链接）',
+    //                    'qr_code',
+    //                    'add-setting',
+    //                    'add_setting');
+    // add_settings_field('qq-contact',
+    //                    'qq联系代码',
+    //                    'qq_contact',
+    //                    'add-setting',
+    //                    'add_setting');
 
-    add_settings_field('OSS_ACCESS_ID',
-                       'OSS_ACCESS_ID',
-                       'oss_access_id',
-                       'add-setting',
-                       'add_setting');
-    add_settings_field('OSS_ACCESS_KEY',
-                       'OSS_ACCESS_KEY',
-                       'oss_access_key',
-                       'add-setting',
-                       'add_setting');
-    add_settings_field('OSS_ACCESS_BUCKET',
-                       'OSS_ACCESS_BUCKET',
-                       'oss_access_bucket',
-                       'add-setting',
-                       'add_setting');
-    add_settings_field('OSS_ACCESS_DOMAIN',
-                       'OSS_ACCESS_DOMAIN',
-                       'oss_access_domain',
-                       'add-setting',
-                       'add_setting');
+    // add_settings_field('OSS_ACCESS_ID',
+    //                    'OSS_ACCESS_ID',
+    //                    'oss_access_id',
+    //                    'add-setting',
+    //                    'add_setting');
+    // add_settings_field('OSS_ACCESS_KEY',
+    //                    'OSS_ACCESS_KEY',
+    //                    'oss_access_key',
+    //                    'add-setting',
+    //                    'add_setting');
+    // add_settings_field('OSS_ACCESS_BUCKET',
+    //                    'OSS_ACCESS_BUCKET',
+    //                    'oss_access_bucket',
+    //                    'add-setting',
+    //                    'add_setting');
+    // add_settings_field('OSS_ACCESS_DOMAIN',
+    //                    'OSS_ACCESS_DOMAIN',
+    //                    'oss_access_domain',
+    //                    'add-setting',
+    //                    'add_setting');
 
 
 
     // Register our setting so that $_POST handling is done for us and
     // our callback function just has to echo the <input>
-    register_setting('add-setting','states');
-    register_setting('add-setting','mail-reciver');
-    register_setting('add-setting','phone-number');
-    register_setting('add-setting','qr-code');
-    register_setting('add-setting','qq-contact');
-
-    register_setting('add-setting','OSS_ACCESS_ID');
-    register_setting('add-setting','OSS_ACCESS_KEY');
-    register_setting('add-setting','OSS_ACCESS_BUCKET');
-    register_setting('add-setting','OSS_ACCESS_DOMAIN');
-
     // 添加原始的option
+
+    register_setting('add-setting','states');
+    //register_setting('add-setting','mail-reciver');
+    //register_setting('add-setting','phone-number');
+    //register_setting('add-setting','qr-code');
+    //register_setting('add-setting','qq-contact');
+
+    //register_setting('add-setting','OSS_ACCESS_ID');
+    //register_setting('add-setting','OSS_ACCESS_KEY');
+    //register_setting('add-setting','OSS_ACCESS_BUCKET');
+    //register_setting('add-setting','OSS_ACCESS_DOMAIN');
+
     register_setting('add-setting','posts_per_page');
 
 }// eg_settings_api_init()

@@ -15,7 +15,7 @@ function iedu_theme_setup() {
     add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form' ) );
 
     set_post_thumbnail_size( 672, 372, true );
-	add_image_size( 'twentyfourteen-full-width', 1038, 576, true );
+	add_image_size( 'aca-full-width', 1038, 576, true );
 }
 
 add_action( 'after_setup_theme', 'iedu_theme_setup' );
@@ -38,12 +38,6 @@ require_once('inc/browser-check.php');
 if(belowIE(9))
 	browser_alert();
 require_once('inc/bootstrap-nav.php');
-require_once('inc/post-type-school.php');
-require_once('inc/post-type-certification.php');
-require_once('inc/post-type-ed.php');
-require_once('inc/post-type-camp.php');
-require_once('inc/post-type-visit.php');
-require_once('inc/post-type-hotel.php');
 
 //require_once('inc/post-metabox.php');
 require_once('inc/remove-origin.php');
@@ -58,14 +52,8 @@ require_once('inc/metabox/discount.php');
 
 if(is_admin()){
 	require_once('inc/protection-code.php');
-	require_once('inc/slideshow-management.php');
+	//require_once('inc/slideshow-management.php');
 }
-
-
-// ----------------------------------------
-// ! email component
-// ----------------------------------------
-require_once('inc/mail-request.php');
 
 // ----------------------------------------
 // ! add menu management
@@ -73,8 +61,7 @@ require_once('inc/mail-request.php');
 add_action( 'admin_menu', 'admin_menu_page' );
 
 function admin_menu_page(){
-    add_menu_page( '导航菜单', '导航菜单', 'manage_options', 'nav-menus.php', '', '', 99 );
-    add_menu_page( '邮箱配置', '邮箱配置', 'manage_options', 'options-general.php?page=wp-mail-smtp/wp_mail_smtp.php', '', '', 100 );
+    //add_menu_page( '导航菜单', '导航菜单', 'manage_options', 'nav-menus.php', '', '', 99 );
     add_menu_page( '新闻', '新闻', 'manage_options', 'edit.php', '', '', 1 );
 }
 

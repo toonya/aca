@@ -11,6 +11,12 @@ function ty_mail_record() {
 }
 function ty_mail_record_fn() {}
 
+add_action( 'admin_menu', 'admin_menu_add_mail' );
+
+function admin_menu_add_mail(){
+    add_menu_page( '邮箱配置', '邮箱配置', 'manage_options', 'options-general.php?page=wp-mail-smtp/wp_mail_smtp.php', '', '', 100 );
+}
+
 
 // ----------------------------------------
 // ! load some info for js.file

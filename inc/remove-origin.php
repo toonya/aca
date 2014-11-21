@@ -42,8 +42,8 @@ function my_menu_pages() {
 		'post-new.php?post_type=page',
 		'edit-comments.php',
 		'themes.php',
-		'plugins.php',
-		'options-general.php',
+		//'plugins.php',
+		//'options-general.php',
 		'users.php'
 		);
 

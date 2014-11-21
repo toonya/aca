@@ -802,6 +802,7 @@ section.together .together-col {
   border: 1px solid #dcdcdc;
   padding: 0 30px 30px;
   position: relative;
+  overflow: hidden;
 }
 section.together .col-title {
   font-size: 20px;

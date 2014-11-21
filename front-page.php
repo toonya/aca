@@ -99,9 +99,9 @@
                             熱點項目
                         </div>
                         <ul class="hot-item-list">
-                            <li><a  class="water-mark-doc free" href=""><div class="link-inner">提供RP Data房屋估價報告<br><small>*價格$75</small></div></a></li>
-                            <li><a class="water-mark-doc free" href=""><div class="link-inner">提供個人VEDA信用報告</div></a></li>
-                            <li><a class="water-mark-clipboard" href=""><div class="link-inner">專業解決信用不良記錄</div></a></li>
+                            <li><a class="water-mark-doc free wow fadeInLeft" href=""><div class="link-inner">提供RP Data房屋估價報告<br><small>*價格$75</small></div></a></li>
+                            <li><a class="water-mark-doc free wow fadeInLeft" href=""><div class="link-inner">提供個人VEDA信用報告</div></a></li>
+                            <li><a class="water-mark-clipboard wow fadeInLeft" href=""><div class="link-inner">專業解決信用不良記錄</div></a></li>
                         </ul>
                     </div>
                 </div><!-- /. end of #1 col -->
@@ -109,19 +109,19 @@
                     <div class="together-col">
                         <div class="col-title">服務特點</div>
                         <ul class="point-list">
-                            <li class="icon icon-award ">
+                            <li class="icon wow fadeInUp icon-award">
                                 <div class="item-title">快速<span>efficiently</span></div>
                                 <p>三天Full Approval</p>
-                            </li><li class="icon icon-like ">
+                            </li><li class="icon wow fadeInUp icon-like">
                                 <div class="item-title">放心<span>satisfaction</span></div>
                                 <p>兩周成交具有競爭力的利息</p>
-                            </li><li class="icon icon-tie ">
+                            </li><li class="icon wow fadeInUp icon-tie">
                                 <div class="item-title">專業<span>professional</span></div>
                                 <p>量身定制的貸款計畫</p>
-                            </li><li class="icon icon-tea ">
+                            </li><li class="icon wow fadeInUp icon-tea">
                                 <div class="item-title">方便<span>conveniency</span></div>
                                 <p>簡單便捷的手續</p>
-                            </li><li class="icon icon-sun ">
+                            </li><li class="icon wow fadeInUp icon-sun">
                                 <div class="item-title">熱情<span>enthusiasm</span></div>
                                 <p>客戶至上的服務</p>
                             </li>
@@ -135,10 +135,10 @@
                             <li><a href="">
                                 <div class="news-title">· ACA獲得“全澳十佳信貸公司”稱號</div>
                                 <div class="content">
-                                    <div class="left">
+                                    <div class="left wow fadeInRight">
                                         <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/news01.png" alt="">
                                     </div>
-                                    <div class="right">
+                                    <div class="right wow fadeInRight">
                                         10月31日，全澳金融大賞在墨爾本會議中心舉行。本次大賞云集了全澳金融公司、投行、知名信貸公司。ACA获颁……
                                     </div>
                                     <div class="clearfix"></div>
@@ -146,19 +146,19 @@
                             </a></li><li><a href="">
                                 <div class="news-title">· 2015年春节放假通知</div>
                                 <div class="content">
-                                    <div class="left">
+                                    <div class="left wow fadeInRight">
                                         <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/news02.png" alt="">
                                     </div>
-                                    <div class="right">2015年2月8日是中国传统的春节，我们ACA全体上下放假三天，2月11日起恢复营业。如给您造成不便，特此致歉……</div>
+                                    <div class="right wow fadeInRight">2015年2月8日是中国传统的春节，我们ACA全体上下放假三天，2月11日起恢复营业。如给您造成不便，特此致歉……</div>
                                     <div class="clearfix"></div>
                                 </div>
                             </a></li><li><a href="">
                                 <div class="news-title">· 2015年春节放假通知</div>
                                 <div class="content">
-                                    <div class="left">
+                                    <div class="left wow fadeInRight">
                                         <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/news02.png" alt="">
                                     </div>
-                                    <div class="right">2015年2月8日是中国传统的春节，我们ACA全体上下放假三天，2月11日起恢复营业。如给您造成不便，特此致歉……</div>
+                                    <div class="right wow fadeInRight">2015年2月8日是中国传统的春节，我们ACA全体上下放假三天，2月11日起恢复营业。如给您造成不便，特此致歉……</div>
                                     <div class="clearfix"></div>
                                 </div>
                             </a></li>

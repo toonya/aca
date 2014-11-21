@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/animate.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/style.css">
 
         <?php wp_head()?>

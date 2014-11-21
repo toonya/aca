@@ -198,7 +198,7 @@ function my_the_content_filter($content) {
   $discount = array();
 
   foreach ($meta_discount as $key) {
-  	 $discount[$key] = ( ! empty(get_post_meta( $id, $key)) )? get_post_meta( $id, $key)[0] : '';
+  	 //$discount[$key] = ( ! empty(get_post_meta( $id, $key)) )? get_post_meta( $id, $key)[0] : '';
   }
 
   // assuming you have created a page/post entitled 'debug'
@@ -209,4 +209,4 @@ function my_the_content_filter($content) {
   return $content;
 }
 
-add_filter( 'the_content', 'my_the_content_filter' );
+//add_filter( 'the_content', 'my_the_content_filter' );

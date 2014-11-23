@@ -5,8 +5,8 @@
             <div id="home-slide" class="carousel slide" data-ride="carousel">
                  <!-- Wrapper for slides -->
                 <div class="carousel-inner">
-                    <div class="item active" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/slide.jpg)">
-                        <!-- <div class="carousel-caption right">
+                    <!-- <div class="item active" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/slide.jpg)">
+                        <div class="carousel-caption right">
                             <div class="carousel-title">如此低的利率，<br />你還在等什麽！</div>
                             <div class="row">
                                 <div class="col-sm-6">
@@ -28,10 +28,17 @@
                             </div>
 
                             <div class="describe">貸款可達<span>90%</span>，無需貸款保險</div>
-                        </div> -->
-                    </div> <!-- /. end of item. -->
-                    <div class="item" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/slide03.jpg)"></div> <!-- /. end of item -->
-                    <div class="item" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/slide04.jpg)"></div> <!-- /. end of item -->
+                        </div>
+                    </div> --> <!-- /. end of item. -->
+                    <?php  
+                        $img_list = get_option('ty_imglistzh');
+                        foreach ($img_list as $key => $item) {
+                            printf( '<div class="item%s" style="background-image:url(%s)"></div> <!-- /. end of item. -->',
+                                ( $key == 0 ) ? ' active' : '',
+                                $item['imgurl']
+                            );
+                        }
+                    ?>
                  </div>
              
                  <!-- Controls -->

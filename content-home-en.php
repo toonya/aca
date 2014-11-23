@@ -5,9 +5,15 @@
             <div id="home-slide" class="carousel slide" data-ride="carousel">
                  <!-- Wrapper for slides -->
                 <div class="carousel-inner">
-                    <div class="item active" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/slide.jpg)"></div> <!-- /. end of item. -->
-                    <div class="item" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/slide03.jpg)"></div> <!-- /. end of item -->
-                    <div class="item" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/slide04.jpg)"></div> <!-- /. end of item -->
+                    <?php  
+                        $img_list = get_option('ty_imglisten');
+                        foreach ($img_list as $key => $item) {
+                            printf( '<div class="item%s" style="background-image:url(%s)"></div> <!-- /. end of item. -->',
+                                ( $key == 0 ) ? ' active' : '',
+                                $item['imgurl']
+                            );
+                        }
+                    ?>
                  </div>
              
                  <!-- Controls -->

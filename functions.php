@@ -52,7 +52,10 @@ require_once('inc/metabox/discount.php');
 
 if(is_admin()){
 	require_once('inc/protection-code.php');
-	//require_once('inc/slideshow-management.php');
+	require_once('inc/img-management.php');
+
+	new TY_img_management('zh','中文','图片规格描述,未添加');
+	new TY_img_management('en','英文','图片规格描述,未添加');
 }
 
 // ----------------------------------------
@@ -61,7 +64,7 @@ if(is_admin()){
 add_action( 'admin_menu', 'admin_menu_page' );
 
 function admin_menu_page(){
-    //add_menu_page( '导航菜单', '导航菜单', 'manage_options', 'nav-menus.php', '', '', 99 );
+    add_menu_page( '导航菜单', '导航菜单', 'manage_options', 'nav-menus.php', '', '', 99 );
     add_menu_page( '新闻', '新闻', 'manage_options', 'edit.php', '', '', 1 );
 }
 
@@ -210,3 +213,26 @@ function my_the_content_filter($content) {
 }
 
 //add_filter( 'the_content', 'my_the_content_filter' );
+
+
+// ----------------------------------------
+// ! get language list
+// ----------------------------------------
+
+function get_language_list() {
+	if(function_exists('pll_the_languages')) {
+		$language_info = pll_the_languages(array('raw'=>1));
+		$langs_html = '';
+
+		foreach ($language_info as $key => $lang) {
+			if($key != 0) $langs_html .= ' / ';
+			$langs_html .= '<a href="'.$lang['url'].'">'.$lang['name'].'</a>';
+		}
+
+		return $langs_html;
+	}
+
+	else {
+		return false;
+	}
+}

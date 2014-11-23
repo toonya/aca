@@ -15,17 +15,24 @@
 
         <?php wp_head()?>
     </head>
-    <body <?php if(wp_is_mobile()) echo 'class="mobile"' ?>>
-       <header>
+    <body class="
+        <?php 
+            if(wp_is_mobile()) echo ' mobile';
+            echo pll_current_language();
+        ?>
+    ">
+        <header>
             <div class="container .row">
                 <div class="col-xs-6">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="" class="logo">
                 </div> <!-- /. end of left header -->
                 <div class="col-xs-6 text-right">
                     <div class="language">
-                        <a href="">中文</a>
+                        <!-- <a href="">中文</a>
                          / 
-                        <a href="">English</a>
+                        <a href="">English</a> -->
+
+                        <?php if(get_language_list()) echo get_language_list(); ?>
                     </div> <!-- /. end of language -->
                     <!-- <div class="contact">
                         <a href="" title="期待您的来电">
@@ -36,19 +43,43 @@
                 </div> <!-- /. end of right header -->
             </div>
         </header> <!-- /.header -->
-
         <nav class="navbar" role="navigation">
             <div class="container">
                 <div class="col-sm-8">
-                    <ul class="menu-list">
+                    <!-- <ul class="menu-list">
                         <li><a href="#">首  頁</a></li>
                         <li><a href="#">關  于</a></li>
                         <li><a href="#">業務範圍</a></li>
                         <li><a href="#">新  聞</a></li>
                         <li><a href="#">聯繫我們</a></li>
                         <li><a href="#">表  格</a></li>
-                    </ul>
+                    </ul> -->
+                    <?php 
+                        $locatioin = '';
+                        if(wp_is_mobile()) $locatioin = 'mobile-menu';
+                        else $locatioin = 'header-menu';
+                        
+                        $head_navigation = array(
+                            'theme_location'  => $locatioin,
+                            'menu'            => '',
+                            'container'       => false,
+                            'container_class' => '',
+                            'container_id'    => '',
+                            'menu_class'      => 'menu-list',
+                            'menu_id'         => '',
+                            'echo'            => true,
+                            'fallback_cb'     => false,
+                            'before'          => '',
+                            'after'           => '',
+                            'link_before'     => '',
+                            'link_after'      => '',
+                            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                            'depth'           => 0,
+                            'walker'          => new Bootsrap_basic(),
+                        );
 
+                        wp_nav_menu( $head_navigation );
+                    ?>
                 </div>
                 <div class="search col-sm-4">
                     <div class="contact">

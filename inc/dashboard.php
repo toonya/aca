@@ -7,7 +7,7 @@ add_action('wp_dashboard_setup','add_dashboard_widgets');
 
 
 function dashboardWidgetContent() {
-	echo '祝全体员工工作顺利!';
+	echo '请不要随意升级系统或者插件, 感谢您的使用!';
 }
 
 
@@ -15,7 +15,7 @@ function add_dashboard_widgets() {
 
 	$custom_dashboard_widgets = array(
 	    'my-dashboard-widget' => array(
-	        'title' => '汇付友',
+	        'title' => '注意事项',
 	        'callback' => 'dashboardWidgetContent'
 	    )
 	);

@@ -2,7 +2,10 @@
 // ----------------------------------------
 // ! init
 // ----------------------------------------
-function iedu_theme_setup() {
+function aca_theme_setup() {
+
+	load_theme_textdomain( 'aca', get_template_directory() . '/languages' );
+
 	register_nav_menus(
 		array(
 		  'header-menu' => __( '桌面版导航' ),
@@ -18,7 +21,7 @@ function iedu_theme_setup() {
 	add_image_size( 'aca-full-width', 1038, 576, true );
 }
 
-add_action( 'after_setup_theme', 'iedu_theme_setup' );
+add_action( 'after_setup_theme', 'aca_theme_setup' );
 
 
 function coolwp_remove_open_sans_from_wp_core() {

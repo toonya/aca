@@ -3,7 +3,7 @@
 		    <div class="container">
 		        <div class="row">
 		            <div class="col-sm-4">
-		                <div class="title">Contact us</div>
+		                <div class="title">聯繫我們</div>
 		                <div class="contact">
 		                    <p>Tel: 1300 222 667</p>            
 		                    <p>D**: (02) 8262 8566</p>

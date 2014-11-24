@@ -8,9 +8,6 @@ Author URI:
 Tags: 
 */
 
-@import "basic.less";
-@import "decoration.less";
-
 // ----------------------------------------
 // ! values
 // ----------------------------------------
@@ -20,8 +17,16 @@ Tags:
 @c-border-color: #DCDCDC;
 @c-border-color-dark: #767676;
 
+html, body {
+	height: 100%;
+}
+
 .col-10-5 {
 	width: 20%;
+}
+
+a:hover {
+	text-decoration: none;
 }
 
 body {
@@ -757,5 +762,34 @@ footer {
 			left: 190%;
 			top: 0;
 		}
+	}
+}
+
+.main {
+	min-height: 50%;
+	padding-top: 48px;
+}
+
+// ----------------------------------------
+// ! news template
+// ----------------------------------------
+
+.main.news {
+	.news-list {
+		margin-top: 48px;
+
+		.item {
+			margin-bottom: 12px;
+		}
+	}
+}
+
+body.zh p {
+	text-indent: 2em;
+}
+
+.single-news {
+	.news-content .content{
+		padding-top: 48px;
 	}
 }

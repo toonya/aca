@@ -37,9 +37,9 @@ add_action( 'admin_enqueue_scripts', 'coolwp_remove_open_sans_from_wp_core' );
 // ----------------------------------------
 require_once('inc/core.php');
 require_once('inc/add-setting.php');
-require_once('inc/browser-check.php');
-if(belowIE(9))
-	browser_alert();
+// require_once('inc/browser-check.php');
+// if(belowIE(9))
+// 	browser_alert();
 require_once('inc/bootstrap-nav.php');
 
 //require_once('inc/post-metabox.php');

@@ -189,8 +189,14 @@ jQuery(function($){
 
 			banner_item.title = jQuery(e).find('input.title').val();
 			banner_item.describe = jQuery(e).find('input.describe').val();
+			banner_item.year1 = jQuery(e).find('input.year1').val();
+			banner_item.rate1 = jQuery(e).find('input.rate1').val();
+			banner_item.year2 = jQuery(e).find('input.year2').val();
+			banner_item.rate2 = jQuery(e).find('input.rate2').val();
 			banner_item.url   = jQuery(e).find('input.url').val();
 			banner_item.imgurl   = jQuery(e).find('input.imgurl').val();
+
+			console.log(banner_item);
 
 			banner_data.bannerlist[i] = banner_item;
 		});

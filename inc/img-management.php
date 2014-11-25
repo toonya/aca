@@ -66,8 +66,12 @@ class TY_img_management {
                     $num = $key+1;
                     $img = $item['imgurl'];
                     $url = $item['url'];
-                    // $title = $item['title'];
-                    // $describe = $item['describe'];
+                    $title = $item['title'];
+                    $describe = $item['describe'];
+                    $year1 = $item['year1'];
+                    $rate1 = $item['rate1'];
+                    $year2 = $item['year2'];
+                    $rate2 = $item['rate2'];
                     ?>
 
                 <div class="tab-pane <?php if($num==1) echo 'active'; ?>" id="<?php echo $num; ?>">
@@ -75,8 +79,25 @@ class TY_img_management {
                         <!-- input area for store data -->
                         <div class="info">
                             <?php // 添加新的栏目，需要添加上面的foreach, 以及下面addnew那里的表单, 以及js里面的上传表单 ?>
-                            <!-- <input type="text" value="<?php echo $title; ?>" class="form-control title need" placeholder="输入标题" />
-                            <input type="text" value="<?php echo $describe; ?>" class="form-control describe need" placeholder="输入描述" /> -->
+                            <input type="text" value="<?php echo $title; ?>" class="form-control title need" placeholder="输入标题" />
+                            <input type="text" value="<?php echo $describe; ?>" class="form-control describe need" placeholder="输入描述" />
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <input type="text" value="<?php echo $year1; ?>" class="form-control year1 need" placeholder="输入年1" />
+                                </div>
+                                <div class="col-xs-6">
+                                    <input type="text" value="<?php echo $rate1; ?>" class="form-control rate1 need" placeholder="输入率1" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <input type="text" value="<?php echo $year2; ?>" class="form-control year2 need" placeholder="输入年2" />
+                                </div>
+                                <div class="col-xs-6">
+                                    <input type="text" value="<?php echo $rate2; ?>" class="form-control rate2 need" placeholder="输入率2" />
+                                </div>
+                            </div>
+
                             <input type="text" value="<?php echo $url; ?>" class="form-control url" placeholder="输入超链接" />
                             <input type="text" value="<?php echo $img; ?>" class="form-control imgurl need" placeholder="输入图片地址，或点击下面的按钮从图片库中选择" />
                         </div>
@@ -106,8 +127,26 @@ class TY_img_management {
                     <div class="col-sm-11">
                         <!-- input area for store data -->
                         <div class="info">
-                            <!-- <input type="text" class="form-control title need" placeholder="输入标题" />
-                            <input type="text" class="form-control describe need" placeholder="输入描述" /> -->
+                            <input type="text" class="form-control title need" placeholder="输入标题" />
+                            <input type="text" class="form-control describe need" placeholder="输入描述" />
+                            
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <input type="text" value="" class="form-control year1 need" placeholder="输入年1" />
+                                </div>
+                                <div class="col-xs-6">
+                                    <input type="text" value="" class="form-control rate1 need" placeholder="输入率1" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <input type="text" value="" class="form-control year2 need" placeholder="输入年2" />
+                                </div>
+                                <div class="col-xs-6">
+                                    <input type="text" value="" class="form-control rate2 need" placeholder="输入率2" />
+                                </div>
+                            </div>
+
                             <input type="text" class="form-control url" placeholder="输入超链接" />
                             <input type="text" class="form-control imgurl need"  placeholder="输入图片地址，或点击下面的按钮从图片库中选择" />
                         </div>

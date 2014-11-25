@@ -206,7 +206,6 @@ section.slide .carousel-caption .carousel-title {
   font-weight: bold;
   line-height: 60px;
   position: relative;
-  margin-right: -36px;
 }
 section.slide .carousel-caption .year {
   text-align: left;
@@ -276,7 +275,7 @@ section.honour {
 }
 section.honour .carousel-control {
   top: auto;
-  bottom: -24px;
+  bottom: -48px;
   width: 32px;
   height: 32px;
   border-radius: 16px;
@@ -296,6 +295,10 @@ section.honour .carousel-control.right {
   -webkit-transform: translateX(6px);
       -ms-transform: translateX(6px);
           transform: translateX(6px);
+}
+section.honour .item p {
+  margin-top: 24px;
+  color: #999;
 }
 section.honour .img-responsive {
   margin: 0 auto;
@@ -656,6 +659,9 @@ body.zh .home p {
 }
 body.en section.together .news-list .content {
   text-indent: 0;
+}
+body.en section.together .hot-item-list li a.free::after {
+  background: url(img/free-en.png) no-repeat;
 }
 .single-news .news-content .content {
   padding-top: 48px;

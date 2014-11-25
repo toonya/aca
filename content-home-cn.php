@@ -5,39 +5,37 @@
             <div id="home-slide" class="carousel slide" data-ride="carousel">
                  <!-- Wrapper for slides -->
                 <div class="carousel-inner">
-                    <!-- <div class="item active" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/slide.jpg)">
-                        <div class="carousel-caption right">
-                            <div class="carousel-title">如此低的利率，<br />你還在等什麽！</div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="year">
-                                        2年固定
-                                    </div>
-                                    <div class="rate">
-                                         4.69<span>%</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="year">
-                                        5年固定
-                                    </div>
-                                    <div class="rate">
-                                         4.99<span>%</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="describe">貸款可達<span>90%</span>，無需貸款保險</div>
-                        </div>
-                    </div> --> <!-- /. end of item. -->
                     <?php  
-                        $img_list = get_option('ty_imglistzh');
-                        foreach ($img_list as $key => $item) {
-                            printf( '<div class="item%s" style="background-image:url(%s)"></div> <!-- /. end of item. -->',
-                                ( $key == 0 ) ? ' active' : '',
-                                $item['imgurl']
-                            );
-                        }
+                        $ty_img_list = get_option('ty_imglistzh');
+                        foreach ($ty_img_list as $key => $item) :;?>
+                            <div class="item <?php if( $key == 0 ) echo ' active';?>" style="background-image:url(<?php echo $item['imgurl']; ?>)">
+                                <div class="carousel-caption right">
+                                    <div class="carousel-title">
+                                        <?php echo $item['title']; ?>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="year">
+                                                <?php echo $item['year1']; ?>年固定
+                                            </div>
+                                            <div class="rate">
+                                                 <?php echo $item['rate1']; ?><span>%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="year">
+                                                <?php echo $item['year2']; ?>年固定
+                                            </div>
+                                            <div class="rate">
+                                                 <?php echo $item['rate2'] ?><span>%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="describe"><?php echo $item['describe']; ?></div>
+                                </div>
+                            </div><!-- /. end of item. -->'
+                        <?php endforeach;
                     ?>
                  </div>
              
@@ -62,22 +60,48 @@
                 <div class="carousel-inner">
                     <div class="item active">
                         <div class="row">
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour02.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour03.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt=""></div>
+                            <div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt="">
+                                <p class="text-center">内容内容内容</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour03.png" alt="">
+                                <p class="text-center">内容内容内容</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour03.png" alt="">
+                                <p class="text-center">内容内容内容</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt="">
+                                <p class="text-center">内容内容内容</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt="">
+                                <p class="text-center">内容内容内容</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt="">
+                                <p class="text-center">内容内容内容</p>
+                            </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="row">
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour02.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour03.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt=""></div>
+                            <div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt="">
+                                <p class="text-center">内容内容内容</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt="">
+                                <p class="text-center">内容内容内容</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour03.png" alt="">
+                                <p class="text-center">内容内容内容</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour03.png" alt="">
+                                <p class="text-center">内容内容内容</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt="">
+                                <p class="text-center">内容内容内容</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt="">
+                                <p class="text-center">内容内容内容</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -146,13 +170,24 @@
                                     <li><a href="<?php the_permalink(); ?>">
                                         <div class="news-title">· <?php the_title(); ?></div>
                                         <div class="content">
-                                            <div class="left wow fadeInRight">
-                                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/news01.png" alt="">
-                                            </div>
-                                            <div class="right wow fadeInRight">
-                                                <?php echo wp_trim_words(get_the_content(), 50); ?>
-                                            </div>
-                                            <div class="clearfix"></div>
+                                            <?php  
+                                                $post_thumb_url = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large')[0];
+                                                
+                                                if(!(empty($post_thumb_url))):;?>
+                                                    <div class="left wow fadeInRight">
+                                                        <img class="img-responsive" src="<?php echo $post_thumb_url; ?>" alt="">
+                                                    </div>
+                                                    <div class="right wow fadeInRight">
+                                                        <?php echo wp_trim_words(get_the_content(), 50); ?>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                <?php
+
+                                                else:; ?>
+                                                    <div class="wow fadeInRight">
+                                                        <?php echo wp_trim_words(get_the_content(), 50); ?>
+                                                    </div>
+                                            <?php endif; ?>
                                         </div>
                                     </a></li>
                             
@@ -162,7 +197,7 @@
                                 wp_reset_postdata();
                             ?>
                         </ul>
-                        <a href="" class="more">更多>></a>
+                        <a href="<?php echo get_permalink( get_page_by_title( '新 闻' ) ); ?>" class="more">更多>></a>
                     </div>
                 </div><!-- /. end of #3 col -->
             </div>

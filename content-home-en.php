@@ -6,13 +6,36 @@
                  <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <?php  
-                        $img_list = get_option('ty_imglisten');
-                        foreach ($img_list as $key => $item) {
-                            printf( '<div class="item%s" style="background-image:url(%s)"></div> <!-- /. end of item. -->',
-                                ( $key == 0 ) ? ' active' : '',
-                                $item['imgurl']
-                            );
-                        }
+                        $ty_img_list = get_option('ty_imglistzh');
+                        foreach ($ty_img_list as $key => $item) :;?>
+                            <div class="item <?php if( $key == 0 ) echo ' active';?>" style="background-image:url(<?php echo $item['imgurl']; ?>)">
+                                <div class="carousel-caption right">
+                                    <div class="carousel-title">
+                                        <?php echo $item['title']; ?>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="year">
+                                                <?php echo $item['year1']; ?>年固定
+                                            </div>
+                                            <div class="rate">
+                                                 <?php echo $item['rate1']; ?><span>%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="year">
+                                                <?php echo $item['year2']; ?>年固定
+                                            </div>
+                                            <div class="rate">
+                                                 <?php echo $item['rate2'] ?><span>%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="describe"><?php echo $item['describe']; ?></div>
+                                </div>
+                            </div><!-- /. end of item. -->'
+                        <?php endforeach;
                     ?>
                  </div>
              
@@ -37,22 +60,48 @@
                 <div class="carousel-inner">
                     <div class="item active">
                         <div class="row">
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour02.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour03.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt=""></div>
+                            <div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt="">
+                                <p class="text-center">Lorem ipsum dolor.</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour03.png" alt="">
+                                <p class="text-center">Lorem ipsum dolor.</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour03.png" alt="">
+                                <p class="text-center">Lorem ipsum dolor.</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt="">
+                                <p class="text-center">Lorem ipsum dolor.</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt="">
+                                <p class="text-center">Lorem ipsum dolor.</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt="">
+                                <p class="text-center">Lorem ipsum dolor.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="row">
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour02.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour03.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt=""></div>
-                            <div class="col-sm-2"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt=""></div>
+                            <div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt="">
+                                <p class="text-center">Lorem ipsum dolor.</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt="">
+                                <p class="text-center">Lorem ipsum dolor.</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour03.png" alt="">
+                                <p class="text-center">Lorem ipsum dolor.</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour03.png" alt="">
+                                <p class="text-center">Lorem ipsum dolor.</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt="">
+                                <p class="text-center">Lorem ipsum dolor.</p>
+                            </div><div class="col-sm-2">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/honour01.png" alt="">
+                                <p class="text-center">Lorem ipsum dolor.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -72,9 +121,9 @@
                             Hot Projects
                         </div>
                         <ul class="hot-item-list">
-                            <li><a class="water-mark-doc free wow fadeInLeft" href=""><div class="link-inner">提供RP Data房屋估價報告<br><small>*價格$75</small></div></a></li>
-                            <li><a class="water-mark-doc free wow fadeInLeft" href=""><div class="link-inner">提供個人VEDA信用報告</div></a></li>
-                            <li><a class="water-mark-clipboard wow fadeInLeft" href=""><div class="link-inner">專業解決信用不良記錄</div></a></li>
+                            <li><a class="water-mark-doc free wow fadeInLeft" href=""><div class="link-inner">Lorem ipsum.<br><small>*Price $75</small></div></a></li>
+                            <li><a class="water-mark-doc free wow fadeInLeft" href=""><div class="link-inner">Lorem ipsum dolor.</div></a></li>
+                            <li><a class="water-mark-clipboard wow fadeInLeft" href=""><div class="link-inner">Lorem ipsum dolor.</div></a></li>
                         </ul>
                     </div>
                 </div><!-- /. end of #1 col -->
@@ -83,20 +132,20 @@
                         <div class="col-title">Features</div>
                         <ul class="point-list">
                             <li class="icon wow fadeInUp icon-award">
-                                <div class="item-title">快速<span>efficiently</span></div>
-                                <p>三天Full Approval</p>
+                                <div class="item-title"><span>Efficiently</span></div>
+                                <p>Full Approval</p>
                             </li><li class="icon wow fadeInUp icon-like">
-                                <div class="item-title">放心<span>satisfaction</span></div>
-                                <p>兩周成交具有競爭力的利息</p>
+                                <div class="item-title"><span>Satisfaction</span></div>
+                                <p>Lorem ipsum dolor.</p>
                             </li><li class="icon wow fadeInUp icon-tie">
-                                <div class="item-title">專業<span>professional</span></div>
-                                <p>量身定制的貸款計畫</p>
+                                <div class="item-title"><span>Professional</span></div>
+                                <p>Lorem ipsum dolor sit.</p>
                             </li><li class="icon wow fadeInUp icon-tea">
-                                <div class="item-title">方便<span>conveniency</span></div>
-                                <p>簡單便捷的手續</p>
+                                <div class="item-title"><span>Conveniency</span></div>
+                                <p>Lorem ipsum.</p>
                             </li><li class="icon wow fadeInUp icon-sun">
-                                <div class="item-title">熱情<span>enthusiasm</span></div>
-                                <p>客戶至上的服務</p>
+                                <div class="item-title"><span>Enthusiasm</span></div>
+                                <p>Lorem ipsum dolor sit.</p>
                             </li>
                         </ul>
                     </div>
@@ -121,13 +170,24 @@
                                     <li><a href="<?php the_permalink(); ?>">
                                         <div class="news-title">· <?php the_title(); ?></div>
                                         <div class="content">
-                                            <div class="left wow fadeInRight">
-                                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/news01.png" alt="">
-                                            </div>
-                                            <div class="right wow fadeInRight">
-                                                <?php echo wp_trim_words(get_the_content(), 50); ?>
-                                            </div>
-                                            <div class="clearfix"></div>
+                                            <?php  
+                                                $post_thumb_url = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large')[0];
+                                                
+                                                if(!(empty($post_thumb_url))):;?>
+                                                    <div class="left wow fadeInRight">
+                                                        <img class="img-responsive" src="<?php echo $post_thumb_url; ?>" alt="">
+                                                    </div>
+                                                    <div class="right wow fadeInRight">
+                                                        <?php echo wp_trim_words(get_the_content(), 50); ?>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                <?php
+
+                                                else:; ?>
+                                                    <div class="wow fadeInRight">
+                                                        <?php echo wp_trim_words(get_the_content(), 50); ?>
+                                                    </div>
+                                            <?php endif; ?>
                                         </div>
                                     </a></li>
                             
@@ -137,7 +197,7 @@
                                 wp_reset_postdata();
                             ?>
                         </ul>
-                        <a href="" class="more">更多>></a>
+                        <a href="<?php echo get_permalink( get_page_by_title( 'News' ) ); ?>" class="more">More</a>
                     </div>
                 </div><!-- /. end of #3 col -->
             </div>
@@ -160,7 +220,7 @@
                                     <div class="col-sm-3 col-10-5">
                                         <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/avatar.jpg" alt="">
                                         <div class="info">
-                                            <p>Nicole 張小姐</p>
+                                            <p>Nicole</p>
                                             <p>Tel: (02)9553 6610</p>
                                             <p>Mob: 0402 854 150</p>
                                         </div>
@@ -168,7 +228,7 @@
                                     <div class="col-sm-3 col-10-5">
                                         <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/avatar.jpg" alt="">
                                         <div class="info">
-                                            <p>Nicole 張小姐</p>
+                                            <p>Nicole</p>
                                             <p>Tel: (02)9553 6610</p>
                                             <p>Mob: 0402 854 150</p>
                                         </div>
@@ -176,7 +236,7 @@
                                     <div class="col-sm-3 col-10-5">
                                         <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/avatar.jpg" alt="">
                                         <div class="info">
-                                            <p>Nicole 張小姐</p>
+                                            <p>Nicole</p>
                                             <p>Tel: (02)9553 6610</p>
                                             <p>Mob: 0402 854 150</p>
                                         </div>
@@ -184,7 +244,7 @@
                                     <div class="col-sm-3 col-10-5">
                                         <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/avatar.jpg" alt="">
                                         <div class="info">
-                                            <p>Nicole 張小姐</p>
+                                            <p>Nicole</p>
                                             <p>Tel: (02)9553 6610</p>
                                             <p>Mob: 0402 854 150</p>
                                         </div>
@@ -192,7 +252,7 @@
                                     <div class="col-sm-3 col-10-5">
                                         <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/avatar.jpg" alt="">
                                         <div class="info">
-                                            <p>Nicole 張小姐</p>
+                                            <p>Nicole</p>
                                             <p>Tel: (02)9553 6610</p>
                                             <p>Mob: 0402 854 150</p>
                                         </div>
@@ -204,7 +264,7 @@
                                     <div class="col-sm-3 col-10-5">
                                         <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/avatar.jpg" alt="">
                                         <div class="info">
-                                            <p>Nicole 張小姐</p>
+                                            <p>Nicole</p>
                                             <p>Tel: (02)9553 6610</p>
                                             <p>Mob: 0402 854 150</p>
                                         </div>
@@ -212,7 +272,7 @@
                                     <div class="col-sm-3 col-10-5">
                                         <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/avatar.jpg" alt="">
                                         <div class="info">
-                                            <p>Nicole 張小姐</p>
+                                            <p>Nicole</p>
                                             <p>Tel: (02)9553 6610</p>
                                             <p>Mob: 0402 854 150</p>
                                         </div>
@@ -220,7 +280,7 @@
                                     <div class="col-sm-3 col-10-5">
                                         <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/avatar.jpg" alt="">
                                         <div class="info">
-                                            <p>Nicole 張小姐</p>
+                                            <p>Nicole</p>
                                             <p>Tel: (02)9553 6610</p>
                                             <p>Mob: 0402 854 150</p>
                                         </div>
@@ -228,7 +288,7 @@
                                     <div class="col-sm-3 col-10-5">
                                         <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/avatar.jpg" alt="">
                                         <div class="info">
-                                            <p>Nicole 張小姐</p>
+                                            <p>Nicole</p>
                                             <p>Tel: (02)9553 6610</p>
                                             <p>Mob: 0402 854 150</p>
                                         </div>
@@ -236,7 +296,7 @@
                                     <div class="col-sm-3 col-10-5">
                                         <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/avatar.jpg" alt="">
                                         <div class="info">
-                                            <p>Nicole 張小姐</p>
+                                            <p>Nicole</p>
                                             <p>Tel: (02)9553 6610</p>
                                             <p>Mob: 0402 854 150</p>
                                         </div>
@@ -256,7 +316,8 @@
     <section class="feedback">
         <div class="container">
             <div class="title">
-                <span>客戶感言</span>
+                <!-- <span>客戶感言</span> -->
+                <span>Customer Feedback</span>
             </div>
 
             <div id="feedback-slide" class="carousel slide" data-ride="carousel" data-interval=false>
@@ -267,10 +328,10 @@
                         <div class="feedback-wrapper">
                             <div class="feedback-inner">
                                 <p><span class="start"></span> 
-                                那年春天，在我們蝸居的第3個年頭即將過去時，我們決定貸款買房。如今我們已經住在了明亮的新家，感謝ACA，想客戶所想，急客戶所急，幫助我們規劃出成功的貸款方案！
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam magnam, totam explicabo dolorem eveniet!</span>
                                 <span class="end"></span></p>
                                 <div class="customer">
-                                    王先生，中餐馆店主
+                                    Mr.Wang，Lorem ipsum.
                                 </div>
                             </div>
                         </div>
@@ -280,10 +341,10 @@
                         <div class="feedback-wrapper">
                             <div class="feedback-inner">
                                 <p><span class="start"></span> 
-                                那年春天，在我們蝸居的第3個年頭即將過去時，我們決定貸款買房。如今我們已經住在了明亮的新家，感謝ACA，想客戶所想，急客戶所急，幫助我們規劃出成功的貸款方案！
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam magnam, totam explicabo dolorem eveniet!</span>
                                 <span class="end"></span></p>
                                 <div class="customer">
-                                    王先生，中餐馆店主
+                                    Mr.Wang，Lorem ipsum.
                                 </div>
                             </div>
                         </div>
@@ -300,7 +361,7 @@
     <section class="co-op">
         <div class="container">
             <div class="title">
-                <span>合作伙伴</span>
+                <span>Cooperative Partner</span>
             </div>
 
             <div id="co-op-slide" class="carousel slide" data-ride="carousel">

@@ -178,14 +178,14 @@
                                                         <img class="img-responsive" src="<?php echo $post_thumb_url; ?>" alt="">
                                                     </div>
                                                     <div class="right wow fadeInRight">
-                                                        <?php echo wp_trim_words(get_the_content(), 50); ?>
+                                                        <?php echo wp_trim_words(get_the_content(), 15); ?>
                                                     </div>
                                                     <div class="clearfix"></div>
                                                 <?php
 
                                                 else:; ?>
                                                     <div class="wow fadeInRight">
-                                                        <?php echo wp_trim_words(get_the_content(), 50); ?>
+                                                        <?php echo wp_trim_words(get_the_content(), 30); ?>
                                                     </div>
                                             <?php endif; ?>
                                         </div>

@@ -1,11 +1,4 @@
-<?php
-/**
- * Template Name: News
- *
- */
-
-get_header();
-?>
+<?php get_header();?>
 
 
 <div class="main single-news">

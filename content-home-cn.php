@@ -34,7 +34,7 @@
 
                                     <div class="describe"><?php echo $item['describe']; ?></div>
                                 </div>
-                            </div><!-- /. end of item. -->'
+                            </div><!-- /. end of item. -->
                         <?php endforeach;
                     ?>
                  </div>

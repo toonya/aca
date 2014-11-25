@@ -6,7 +6,7 @@
                  <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <?php  
-                        $ty_img_list = get_option('ty_imglistzh');
+                        $ty_img_list = get_option('ty_imglisten');
                         foreach ($ty_img_list as $key => $item) :;?>
                             <div class="item <?php if( $key == 0 ) echo ' active';?>" style="background-image:url(<?php echo $item['imgurl']; ?>)">
                                 <div class="carousel-caption right">
@@ -16,7 +16,7 @@
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="year">
-                                                <?php echo $item['year1']; ?>年固定
+                                                <?php echo $item['year1']; ?>Year Lorem.
                                             </div>
                                             <div class="rate">
                                                  <?php echo $item['rate1']; ?><span>%</span>
@@ -24,7 +24,7 @@
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="year">
-                                                <?php echo $item['year2']; ?>年固定
+                                                <?php echo $item['year2']; ?>Year Lorem.
                                             </div>
                                             <div class="rate">
                                                  <?php echo $item['rate2'] ?><span>%</span>
@@ -34,7 +34,7 @@
 
                                     <div class="describe"><?php echo $item['describe']; ?></div>
                                 </div>
-                            </div><!-- /. end of item. -->'
+                            </div><!-- /. end of item. -->
                         <?php endforeach;
                     ?>
                  </div>

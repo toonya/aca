@@ -639,6 +639,9 @@ footer .col-sm-4::after {
 .main.home {
   padding-top: 0;
 }
+.main.page h1 {
+  margin-bottom: 48px;
+}
 .main.news .news-list {
   margin-top: 48px;
 }

@@ -105,36 +105,37 @@
                     <div class="together-col">
                         <div class="col-title">News</div>
                         <ul class="news-list">
-                            <li><a href="">
-                                <div class="news-title">· ACA獲得“全澳十佳信貸公司”稱號</div>
-                                <div class="content">
-                                    <div class="left wow fadeInRight">
-                                        <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/news01.png" alt="">
-                                    </div>
-                                    <div class="right wow fadeInRight">
-                                        10月31日，全澳金融大賞在墨爾本會議中心舉行。本次大賞云集了全澳金融公司、投行、知名信貸公司。ACA获颁……
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a></li><li><a href="">
-                                <div class="news-title">· 2015年春节放假通知</div>
-                                <div class="content">
-                                    <div class="left wow fadeInRight">
-                                        <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/news02.png" alt="">
-                                    </div>
-                                    <div class="right wow fadeInRight">2015年2月8日是中国传统的春节，我们ACA全体上下放假三天，2月11日起恢复营业。如给您造成不便，特此致歉……</div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a></li><li><a href="">
-                                <div class="news-title">· 2015年春节放假通知</div>
-                                <div class="content">
-                                    <div class="left wow fadeInRight">
-                                        <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/news02.png" alt="">
-                                    </div>
-                                    <div class="right wow fadeInRight">2015年2月8日是中国传统的春节，我们ACA全体上下放假三天，2月11日起恢复营业。如给您造成不便，特此致歉……</div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a></li>
+                            <?php  
+                                $news_args = array(
+                                    'post_type' => 'post',
+                                    'lang' => pll_current_language(), // query German and French posts
+                                    'showposts' => 3,
+                                );
+                            
+                                $news_posts = new WP_Query($news_args);
+                            
+                                while ($news_posts->have_posts()) {         
+                                    $news_posts->the_post();
+                                    ?>
+
+                                    <li><a href="<?php the_permalink(); ?>">
+                                        <div class="news-title">· <?php the_title(); ?></div>
+                                        <div class="content">
+                                            <div class="left wow fadeInRight">
+                                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/news01.png" alt="">
+                                            </div>
+                                            <div class="right wow fadeInRight">
+                                                <?php echo wp_trim_words(get_the_content(), 50); ?>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </a></li>
+                            
+                                    <?php
+                                }
+                            
+                                wp_reset_postdata();
+                            ?>
                         </ul>
                         <a href="" class="more">更多>></a>
                     </div>

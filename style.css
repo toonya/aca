@@ -654,6 +654,9 @@ body.zh p {
 body.zh .home p {
   text-indent: 0;
 }
+body.en section.together .news-list .content {
+  text-indent: 0;
+}
 .single-news .news-content .content {
   padding-top: 48px;
 }

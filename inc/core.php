@@ -33,6 +33,6 @@ else
 
 add_action('admin_footer_text', 'my_admin_footer_function');
 function my_admin_footer_function() {
-	echo '同雅设计';
+	echo '感谢您的使用!';
 }
 ?>

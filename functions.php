@@ -37,27 +37,14 @@ add_action( 'admin_enqueue_scripts', 'coolwp_remove_open_sans_from_wp_core' );
 // ----------------------------------------
 require_once('inc/core.php');
 require_once('inc/add-setting.php');
-// require_once('inc/browser-check.php');
-// if(belowIE(9))
-// 	browser_alert();
 require_once('inc/bootstrap-nav.php');
-
-//require_once('inc/post-metabox.php');
 require_once('inc/remove-origin.php');
-
 require_once('inc/change-login-area.php');
-//require_once('inc/qn/qn-support.php');
-
-// metabox
-//require_once('inc/metabox/get_custom_metabox_html.php');
-//require_once('inc/metabox/showcase.php');
-//require_once('inc/metabox/discount.php');
 require_once('inc/dashboard.php');
 
 
 
 if(is_admin()){
-	require_once('inc/protection-code.php');
 	require_once('inc/img-management.php');
 
 	new TY_img_management('zh','中文','图片规格描述,未添加');
@@ -115,49 +102,9 @@ function theme_name_wp_title( $title, $sep ) {
 	else
 		$title .= get_bloginfo( 'name', 'display' );
 
-	// Add the blog description for the home/front page.
-/*
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) ) {
-		$title .= " $sep $site_description";
-	}
-*/
-
-	// Add a page number if necessary:
-/*
-	if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-		$title .= sprintf( __( 'Page %s', '_s' ), max( $paged, $page ) );
-	}
-*/
-
 	return $title;
 }
 add_filter( 'wp_title', 'theme_name_wp_title', 10, 2 );
-
-
-// ----------------------------------------
-// ! filter content with discount
-// ----------------------------------------
-
-function my_the_content_filter($content) {
-  
-  $id = $GLOBALS['post']->ID;
-  $meta_discount = array('is_discount','discount_start','discount_finish');
-  $discount = array();
-
-  foreach ($meta_discount as $key) {
-  	 //$discount[$key] = ( ! empty(get_post_meta( $id, $key)) )? get_post_meta( $id, $key)[0] : '';
-  }
-
-  // assuming you have created a page/post entitled 'debug'
-  if ($discount['is_discount']) {
-  	return '<p class="text-danger" data-time-container><strong>[限时优惠] 优惠时间: <span data-translate="time" data-time="'.$discount['discount_start'].'"></span>-<span data-translate="time" data-time="'.$discount['discount_finish'].'"></span>, 具体请咨询客服人员</strong></p>'.$content;
-  }
-  // otherwise returns the database content
-  return $content;
-}
-
-//add_filter( 'the_content', 'my_the_content_filter' );
 
 
 // ----------------------------------------

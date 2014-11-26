@@ -32,11 +32,11 @@ function add_setting_func() {
 
 
     //original setting
-    add_settings_field('posts_per_page',
-                       'posts_per_page',
-                       'posts_per_page_render',
-                       'add-setting',
-                       'add_setting');
+    // add_settings_field('posts_per_page',
+    //                    'posts_per_page',
+    //                    'posts_per_page_render',
+    //                    'add-setting',
+    //                    'add_setting');
 
 
     // Add the field with the names and function to use for our new
@@ -46,11 +46,11 @@ function add_setting_func() {
                        'add_setting_stats',
                        'add-setting',
                        'add_setting');
-    // add_settings_field('mail-reciver',
-    //                    '接收邮件地址(多个Email使用空格区分)',
-    //                    'mail_reciver_stats',
-    //                    'add-setting',
-    //                    'add_setting');
+    add_settings_field('mail-reciver',
+                       '接收邮件地址(多个Email使用空格区分)',
+                       'mail_reciver_stats',
+                       'add-setting',
+                       'add_setting');
     // add_settings_field('phone-number',
     //                    '联系电话（填写后，前台会出现相应模块）',
     //                    'phone_number',
@@ -96,7 +96,7 @@ function add_setting_func() {
     // 添加原始的option
 
     register_setting('add-setting','states');
-    //register_setting('add-setting','mail-reciver');
+    register_setting('add-setting','mail-reciver');
     //register_setting('add-setting','phone-number');
     //register_setting('add-setting','qr-code');
     //register_setting('add-setting','qq-contact');
@@ -106,7 +106,7 @@ function add_setting_func() {
     //register_setting('add-setting','OSS_ACCESS_BUCKET');
     //register_setting('add-setting','OSS_ACCESS_DOMAIN');
 
-    register_setting('add-setting','posts_per_page');
+    //register_setting('add-setting','posts_per_page');
 
 }// eg_settings_api_init()
 

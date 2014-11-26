@@ -1,7 +1,6 @@
 <?php
 // ----------------------------------------
-// ! add a admin page to edit the banner
-//   slide images
+// ! mail fn.
 // ----------------------------------------
 
 //add_action( 'admin_menu', 'ty_mail_record' );

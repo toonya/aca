@@ -19,7 +19,7 @@ function remove_wp_logo( $wp_admin_bar ) {
 	$wp_admin_bar->remove_node( 'new-content' );
 	$wp_admin_bar->remove_node( 'updates' );
 	$wp_admin_bar->remove_node( 'dashboard' );
-	//$wp_admin_bar->remove_node( 'themes' );
+	$wp_admin_bar->remove_node( 'themes' );
 	$wp_admin_bar->remove_node( 'customize' );
 	$wp_admin_bar->remove_node( 'menus' );
 	$wp_admin_bar->remove_node( 'view-site' );
@@ -41,7 +41,7 @@ function my_menu_pages() {
 		//'upload.php',
 		'post-new.php?post_type=page',
 		'edit-comments.php',
-		'themes.php',
+		//'themes.php',
 		//'plugins.php',
 		//'options-general.php',
 		'users.php'

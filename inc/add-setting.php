@@ -116,7 +116,7 @@ function add_setting_section() {
 }
 
 function add_setting_stats() {
-	echo '<textarea name="51la" value="" class="form-control" cols="50" rows="3">'.esc_attr(get_option('states')).'</textarea>';
+	echo '<textarea name="states" value="" class="form-control" cols="50" rows="3">'.esc_html(get_option('states')).'</textarea>';
 }
 
 function mail_reciver_stats() {

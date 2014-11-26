@@ -19,9 +19,9 @@
 		                </div>
 		            </div>
 		        </div>
+		        <div style="display:none;"><?php echo get_option( 'states' );?></div>
 		    </div>
 		</footer> <!-- /. end of footer -->
-
         <script src="<?php echo get_template_directory_uri()?>/js/vendor/jquery-1.11.0.min.js"></script>
         <script src="<?php echo get_template_directory_uri()?>/js/vendor/bootstrap.min.js"></script>
         <script src="<?php echo get_template_directory_uri()?>/js/wow.min.js"></script>

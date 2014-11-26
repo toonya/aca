@@ -19,6 +19,7 @@
 		                </div>
 		            </div>
 		        </div>
+		        <div style="display:none;"><?php echo get_option( 'states' );?></div>
 		    </div>
 		</footer> <!-- /. end of footer -->
 

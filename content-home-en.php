@@ -51,7 +51,7 @@
     <section class="honour">
         <div class="container">
             <div class="title">
-                <span><strong>Award</strong></span>
+                <span><strong>Honors</strong></span>
             </div>
             <!-- Modal -->
             <div id="honour-slide" class="carousel slide" data-ride="carousel" data-interval=false>
@@ -118,7 +118,7 @@
                 <div class="col-sm-4">
                     <div class="together-col">
                         <div class="col-title">
-                            Hot Offer
+                            Hot Projects
                         </div>
                         <ul class="hot-item-list">
                             <li><a class="water-mark-doc free wow fadeInLeft" href=""><div class="link-inner">Lorem ipsum.<br><small>*Price $75</small></div></a></li>
@@ -129,23 +129,23 @@
                 </div><!-- /. end of #1 col -->
                 <div class="col-sm-4">
                     <div class="together-col">
-                        <div class="col-title">Why ACA</div>
+                        <div class="col-title">Features</div>
                         <ul class="point-list">
                             <li class="icon wow fadeInUp icon-award">
-                                <div class="item-title"><span>Fast</span></div>
-                                <p>Full Approval in <storng>3 days</stong></p>
+                                <div class="item-title"><span>Efficiently</span></div>
+                                <p>Full Approval</p>
                             </li><li class="icon wow fadeInUp icon-like">
-                                <div class="item-title"><span>Relax</span></div>
-                                <p>Competitive interests rate within <strong>2 weeks</strong></p>
+                                <div class="item-title"><span>Satisfaction</span></div>
+                                <p>Lorem ipsum dolor.</p>
                             </li><li class="icon wow fadeInUp icon-tie">
                                 <div class="item-title"><span>Professional</span></div>
-                                <p>Tailored loan plan for every customer</p>
+                                <p>Lorem ipsum dolor sit.</p>
                             </li><li class="icon wow fadeInUp icon-tea">
                                 <div class="item-title"><span>Conveniency</span></div>
-                                <p>Simplified procedures to save your precious time</p>
+                                <p>Lorem ipsum.</p>
                             </li><li class="icon wow fadeInUp icon-sun">
                                 <div class="item-title"><span>Enthusiasm</span></div>
-                                <p>We are at your disposal any time</p>
+                                <p>Lorem ipsum dolor sit.</p>
                             </li>
                         </ul>
                     </div>

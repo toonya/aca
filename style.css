@@ -18,7 +18,7 @@ a:hover {
   text-decoration: none;
 }
 body {
-  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Tahoma;
   background: #fff;
   min-width: 1024px;
 }
@@ -57,6 +57,7 @@ nav.navbar {
   position: relative;
   z-index: 10;
   margin: 0;
+  font-size: 14px;
 }
 nav.navbar .col-sm-8 {
   padding-left: 0;
@@ -87,10 +88,12 @@ nav.navbar .menu-list a {
   text-align: center;
   display: block;
   line-height: 54px;
-  font-size: 22px;
+  font-size: 20px;
 }
 nav.navbar .menu-list a:hover {
-  background: #e31914;
+  background: #FF5252;
+  color: black;
+  font-size: 24px;
 }
 nav.navbar .search form {
   position: absolute;

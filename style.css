@@ -25,31 +25,29 @@ body {
 body .container {
   min-width: 1024px;
 }
-header {
-  height: 80px;
+header{
+height: 120px;
+width:100%;
 }
-header .logo {
-  margin-top: 14px;
+.right{
+float:right;
+
 }
-header .language {
-  padding: 14px 6px 6px;
-  display: inline-block;
-  background: #000;
-  color: #aaa;
+.contact{
+background-color:red;
+display:inline-bloke;
 }
-header .language a {
-  color: #fff;
-  transition: .5s;
+
+.language{
+background-color: #404040;
+display:inline-bloke;
 }
-header .language a:hover {
-  color: #ff5d58;
-}
-header .contact a {
-  color: black;
-  font-size: 18px;
-  font-weight: bold;
-}
-nav.navbar {
+
+
+
+
+
+/*nav.navbar {
   height: 55px;
   background: #f42a25;
   border-radius: 0;
@@ -58,15 +56,25 @@ nav.navbar {
   z-index: 10;
   margin: 0;
   font-size: 14px;
+}-------test by Hong 28/11 */
+
+/*nav.toplogo{
+margin-top:20px;
 }
-nav.navbar .col-sm-8 {
-  padding-left: 0;
+nav.navbar{
+float:right;
+color:black;
+z-index:10;
 }
+*/
+/*nav.navbar .col-sm-8 {
+  padding-left: 0;  
+}*/
 nav.navbar .menu-list {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: table;
+  display: in-block;
   width: 100%;
 }
 nav.navbar .menu-list li {
@@ -146,9 +154,10 @@ nav.navbar .search form button::before {
   height: 32px;
   background: #DDDDDD;
 }
-nav.navbar .contact {
+nav.navbar {
   float: right;
 }
+
 nav.navbar .contact a {
   color: black;
   font-size: 18px;

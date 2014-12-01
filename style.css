@@ -177,6 +177,10 @@ nav.navbar .contact a {
 }
 .main {
   position: relative;
+  border-top: 5px solid #EC423C;
+}
+.main.home {
+  border-top: none;
 }
 section.slide .carousel-control {
   top: 50%;

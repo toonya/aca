@@ -225,10 +225,12 @@ section.slide .carousel-caption.right {
   top: 60px;
 }
 section.slide .carousel-caption .carousel-title {
-  font-size: 54px;
+  font-size: 44px;
   font-weight: bold;
-  line-height: 60px;
+  line-height: 48px;
   position: relative;
+  text-align: left;
+  text-transform: uppercase;
 }
 section.slide .carousel-caption .year {
   text-align: left;
@@ -247,7 +249,7 @@ section.slide .carousel-caption .rate span {
 section.slide .carousel-caption .describe {
   font-size: 18px;
   font-style: italic;
-  padding-top: 68px;
+  padding-top: 12px;
 }
 section.slide .carousel-caption .describe span {
   font-size: 24px;

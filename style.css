@@ -26,37 +26,59 @@ body .container {
   min-width: 1024px;
 }
 header {
-  height: 80px;
+  height: 108px;
 }
 header .logo {
   margin-top: 14px;
 }
 header .language {
-  padding: 14px 6px 6px;
+  padding: 0 6px;
   display: inline-block;
-  background: #000;
   color: #aaa;
 }
 header .language a {
-  color: #fff;
+  color: #aaa;
   transition: .5s;
 }
 header .language a:hover {
-  color: #ff5d58;
+  color: #777777;
+}
+header .contact {
+  margin-right: 12px;
 }
 header .contact a {
   color: black;
-  font-size: 18px;
-  font-weight: bold;
+  color: #aaa;
+  transition: .5s;
+}
+header .contact a span {
+  font-size: .9em;
+}
+header .contact a:hover {
+  color: #777777;
+}
+header .language,
+header .contact {
+  float: right;
+}
+header .nav-wrapper {
+  height: 80px;
+}
+.top-bar {
+  border-bottom: 1px solid #eee;
+  height: 28px;
+  line-height: 28px;
+  padding-right: 0;
 }
 nav.navbar {
-  height: 55px;
-  background: #f42a25;
-  border-radius: 0;
-  box-shadow: 0 3px 3px 2px rgba(75, 5, 0, 0.3);
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  height: 80px;
   z-index: 10;
   margin: 0;
+  display: block;
+  border: none;
 }
 nav.navbar .col-sm-8 {
   padding-left: 0;
@@ -73,24 +95,18 @@ nav.navbar .menu-list li {
   position: relative;
   width: 1%;
 }
-nav.navbar .menu-list li::after {
-  content: " ";
-  width: 1px;
-  height: 43px;
-  top: 6px;
-  right: 0;
-  position: absolute;
-  background: #B2332D;
-}
 nav.navbar .menu-list a {
-  color: #fff;
+  transition: background .5s;
+  color: #585858;
   text-align: center;
   display: block;
-  line-height: 54px;
-  font-size: 22px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 18px;
 }
 nav.navbar .menu-list a:hover {
-  background: #e31914;
+  background: #00c0f3;
+  color: #fff;
 }
 nav.navbar .search form {
   position: absolute;

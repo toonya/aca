@@ -1,52 +1,50 @@
 <div class="main home">
-    <div class="container">
-        <section class="slide">
-         <!-- Modal -->
-            <div id="home-slide" class="carousel slide" data-ride="carousel">
-                 <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <?php  
-                        $ty_img_list = get_option('ty_imglisten');
-                        foreach ($ty_img_list as $key => $item) :;?>
-                            <div class="item <?php if( $key == 0 ) echo ' active';?>" style="background-image:url(<?php echo $item['imgurl']; ?>)">
-                                <div class="carousel-caption right">
-                                    <div class="carousel-title">
-                                        <?php echo $item['title']; ?>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="year">
-                                                <?php echo $item['year1']; ?>Year Lorem.
-                                            </div>
-                                            <div class="rate">
-                                                 <?php echo $item['rate1']; ?><span>%</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="year">
-                                                <?php echo $item['year2']; ?>Year Lorem.
-                                            </div>
-                                            <div class="rate">
-                                                 <?php echo $item['rate2'] ?><span>%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="describe"><?php echo $item['describe']; ?></div>
-                                </div>
-                            </div><!-- /. end of item. -->
-                        <?php endforeach;
-                    ?>
-                 </div>
-             
-                 <!-- Controls -->
-                <a class="left carousel-control" href="#home-slide" role="button" data-slide="prev">
-                </a>
-                <a class="right carousel-control" href="#home-slide" role="button" data-slide="next">
-                </a>
-            </div>
-        </section>
-    </div> <!-- /. end of slide -->
+    <section class="slide">
+      <!-- Modal -->
+         <div id="home-slide" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+             <div class="carousel-inner">
+                 <?php  
+                     $ty_img_list = get_option('ty_imglisten');
+                     foreach ($ty_img_list as $key => $item) :;?>
+                         <div class="item <?php if( $key == 0 ) echo ' active';?>" style="background-image:url(<?php echo $item['imgurl']; ?>)">
+                             <div class="carousel-caption right">
+                                 <div class="carousel-title">
+                                     <?php echo $item['title']; ?>
+                                 </div>
+                                 <div class="row">
+                                     <div class="col-sm-6">
+                                         <div class="year">
+                                             <?php echo $item['year1']; ?>Year Lorem.
+                                         </div>
+                                         <div class="rate">
+                                              <?php echo $item['rate1']; ?><span>%</span>
+                                         </div>
+                                     </div>
+                                     <div class="col-sm-6">
+                                         <div class="year">
+                                             <?php echo $item['year2']; ?>Year Lorem.
+                                         </div>
+                                         <div class="rate">
+                                              <?php echo $item['rate2'] ?><span>%</span>
+                                         </div>
+                                     </div>
+                                 </div>
+     
+                                 <div class="describe"><?php echo $item['describe']; ?></div>
+                             </div>
+                         </div><!-- /. end of item. -->
+                     <?php endforeach;
+                 ?>
+              </div>
+          
+              <!-- Controls -->
+             <a class="left carousel-control" href="#home-slide" role="button" data-slide="prev">
+             </a>
+             <a class="right carousel-control" href="#home-slide" role="button" data-slide="next">
+             </a>
+         </div>
+     </section> <!-- /. end of slide -->
 
     <section class="honour">
         <div class="container">

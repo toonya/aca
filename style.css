@@ -222,7 +222,10 @@ section.slide .carousel-caption.right {
   left: 50%;
   right: 15%;
   text-align: right;
-  top: 24px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 section.slide .carousel-caption .carousel-title {
   font-size: 48px;

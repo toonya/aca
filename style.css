@@ -96,7 +96,6 @@ nav.navbar .menu-list li {
   width: 1%;
 }
 nav.navbar .menu-list a {
-  transition: background .2s;
   color: #585858;
   text-align: center;
   display: block;
@@ -105,7 +104,7 @@ nav.navbar .menu-list a {
   font-size: 18px;
 }
 nav.navbar .menu-list a:hover {
-  background: #e31914;
+  background: #f42a25;
   color: #fff;
 }
 nav.navbar .search form {

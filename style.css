@@ -103,6 +103,11 @@ nav.navbar .menu-list a {
   line-height: 80px;
   font-size: 18px;
 }
+nav.navbar .menu-list a.active {
+  background: #f42a25;
+  color: #fff;
+  opacity: .8;
+}
 nav.navbar .menu-list a:hover {
   background: #f42a25;
   color: #fff;

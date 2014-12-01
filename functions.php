@@ -117,8 +117,9 @@ function get_language_list() {
 		$langs_html = '';
 
 		foreach ($language_info as $key => $lang) {
+			$is_current = (pll_current_language()==$lang['slug'])? ' class="current-language"':'';
 			if($key != 0) $langs_html .= ' / ';
-			$langs_html .= '<a href="'.$lang['url'].'">'.$lang['name'].'</a>';
+			$langs_html .= '<a'.$is_current.' href="'.$lang['url'].'">'.$lang['name'].'</a>';
 		}
 
 		return $langs_html;

@@ -41,7 +41,10 @@ header .language a {
   transition: .5s;
 }
 header .language a:hover {
-  color: #777777;
+  color: #f42a25;
+}
+header .language .current-language {
+  color: #f42a25;
 }
 header .contact {
   margin-right: 12px;

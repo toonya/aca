@@ -124,6 +124,40 @@ nav.navbar {
 			display: table-cell;
 			position: relative;
 			width: 1%;
+
+			a {
+				&::before {
+					content: ' ';
+					font-family: 'Glyphicons Halflings';
+					display: block;
+					padding-top: 12px;
+				}
+			}
+			&:nth-child(1) a {
+				&::before {
+					content: '\e021';
+				}
+			}&:nth-child(2) a {
+				&::before {
+					content: '\e200';
+				}
+			}&:nth-child(3) a {
+				&::before {
+					content: '\e033';
+				}
+			}&:nth-child(4) a {
+				&::before {
+					content: '\e122';
+				}
+			}&:nth-child(5) a {
+				&::before {
+					content: '\e142';
+				}
+			}&:nth-child(6) a {
+				&::before {
+					content: '\e183';
+				}
+			}
 		}
 
 		a {
@@ -131,7 +165,7 @@ nav.navbar {
 			text-align: center;
 			display: block;
 			height: 80px;
-			line-height: 80px;
+			//line-height: 80px;
 			font-size: 18px;
 
 			&.active {

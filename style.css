@@ -98,12 +98,35 @@ nav.navbar .menu-list li {
   position: relative;
   width: 1%;
 }
+nav.navbar .menu-list li a::before {
+  content: ' ';
+  font-family: 'Glyphicons Halflings';
+  display: block;
+  padding-top: 12px;
+}
+nav.navbar .menu-list li:nth-child(1) a::before {
+  content: '\e021';
+}
+nav.navbar .menu-list li:nth-child(2) a::before {
+  content: '\e200';
+}
+nav.navbar .menu-list li:nth-child(3) a::before {
+  content: '\e033';
+}
+nav.navbar .menu-list li:nth-child(4) a::before {
+  content: '\e122';
+}
+nav.navbar .menu-list li:nth-child(5) a::before {
+  content: '\e142';
+}
+nav.navbar .menu-list li:nth-child(6) a::before {
+  content: '\e183';
+}
 nav.navbar .menu-list a {
   color: #585858;
   text-align: center;
   display: block;
   height: 80px;
-  line-height: 80px;
   font-size: 18px;
 }
 nav.navbar .menu-list a.active {

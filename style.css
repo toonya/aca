@@ -102,7 +102,7 @@ nav.navbar .menu-list li a::before {
   content: ' ';
   font-family: 'Glyphicons Halflings';
   display: block;
-  padding-top: 12px;
+  padding: 16px 0 3px;
 }
 nav.navbar .menu-list li:nth-child(1) a::before {
   content: '\e021';
@@ -127,7 +127,7 @@ nav.navbar .menu-list a {
   text-align: center;
   display: block;
   height: 80px;
-  font-size: 18px;
+  font-size: 16px;
 }
 nav.navbar .menu-list a.active {
   background: #f42a25;

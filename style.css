@@ -25,6 +25,9 @@ body {
 body .container {
   min-width: 1024px;
 }
+section.slide {
+  min-width: 1024px;
+}
 header {
   height: 108px;
 }

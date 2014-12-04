@@ -44,12 +44,11 @@ require_once('inc/dashboard.php');
 
 
 
-if(is_admin()){
-	require_once('inc/img-management.php');
-
-	new TY_img_management('zh','中文','图片规格描述,未添加');
-	new TY_img_management('en','英文','图片规格描述,未添加');
-}
+// if(is_admin()){
+// 	require_once('inc/img-management.php');
+// 	new TY_img_management('zh','中文','图片规格描述,未添加');
+// 	new TY_img_management('en','英文','图片规格描述,未添加');
+// }
 
 // ----------------------------------------
 // ! add menu management

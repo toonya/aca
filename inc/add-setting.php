@@ -46,6 +46,16 @@ function add_setting_func() {
                        'add_setting_stats',
                        'add-setting',
                        'add_setting');
+    add_settings_field('slideshow-cn',
+                       '中文幻灯片id',
+                       'slideshow_cn_builder',
+                       'add-setting',
+                       'add_setting');
+    add_settings_field('slideshow-en',
+                       '英文幻灯片id',
+                       'slideshow_en_builder',
+                       'add-setting',
+                       'add_setting');
     add_settings_field('mail-reciver',
                        '接收邮件地址(多个Email使用空格区分)',
                        'mail_reciver_stats',
@@ -97,6 +107,8 @@ function add_setting_func() {
 
     register_setting('add-setting','states');
     register_setting('add-setting','mail-reciver');
+    register_setting('add-setting','slideshow-cn');
+    register_setting('add-setting','slideshow-en');
     //register_setting('add-setting','phone-number');
     //register_setting('add-setting','qr-code');
     //register_setting('add-setting','qq-contact');
@@ -125,6 +137,14 @@ function mail_reciver_stats() {
 
 function phone_number() {
   echo '<input name="phone-number" type="text" class="form-control" value="'.esc_attr(get_option('phone-number')).'" />';
+}
+
+function slideshow_cn_builder() {
+  echo '<input name="slideshow-cn" type="text" class="form-control" value="'.esc_attr(get_option('slideshow-cn')).'" />';
+}
+
+function slideshow_en_builder() {
+  echo '<input name="slideshow-en" type="text" class="form-control" value="'.esc_attr(get_option('slideshow-en')).'" />';
 }
 
 function qr_code() {
